@@ -1,0 +1,747 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,ol, ul, li, dl, dd, dt,
+small, strike, strong, sub, sup, tt, var, u, center,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------------------------- start editing here ------------------------------------------*/
+
+body{
+
+    background-color: white;
+}
+
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+
+.promo{
+  padding: 10px 0px 10px 0px;
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+  font-size: 12px;
+}
+
+.wrapper{
+    width: 95%;
+    margin: 0px auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo .wrapper {
+  justify-content: center;
+}
+
+.promo p{
+font-weight: bold;
+}
+
+
+#siteBrand{
+background-color: white;
+}
+
+#siteBrand a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: Skillet;
+    src: url(Fontspring-DEMO-skillet-regular.otf);
+  }
+
+  @font-face {
+    font-family: Edo;
+    src: url(edo.ttf);
+  }
+  
+
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 85px;
+    font-family: 'Skillet';
+    animation-name: colorchange;
+    animation-duration: 5s;
+}
+
+h3 {
+  color: red;
+  font-size: 60px;
+  font-family: 'Skillet';
+}
+
+
+ul li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.headicons {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 100px;
+}
+
+.headicons i {
+  margin-right: 25px;
+}
+
+.headicons {    /*took out img from this css*/
+    margin-right: 10px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------Sliders----------------------------------------------------*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slide-content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: transparent;
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+}
+
+.slide-content h2{
+font-family: Edo;
+color: rgb(248, 248, 36);
+font-size: 50px;
+margin: 250px 0px 10px 0px;
+}
+
+
+.btn {
+  width: 100px;
+  padding: 10px 25px;
+  text-align: center;
+  border: none;
+  background-color: white;
+}
+
+.btn a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+
+.main-section {
+  padding: 0px;
+  background: #FFFFFF;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/*-----------------------------------------------------Sliders----------------------------------------------------*/
+
+/*------------------for tablet---------------*/
+
+
+.box{
+    width: 50px;
+    border: 1px solid black;
+    padding: 20px 10px;
+    }
+
+.contact{
+text-align: center;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color: white;
+    padding: 40px 0px;
+    text-align: center;
+    margin-top: 600px;
+}
+
+.footer-hr {
+  margin-bottom: 25px;
+  height: .1px;
+  border: none;
+  background: grey;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons i{
+  margin-right: 15px;
+}
+
+
+#copyright{
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+}
+
+#copyright h3 {
+  margin-top: -50px;
+}
+
+#signupform{
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+/*-----------Assignment 8 & 9
+@media screen and (max-width: 720px) {
+.promo{
+background-color: burlywood;
+color: white;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.box{
+  background-color: red;
+  color: white;
+}
+
+}
+-----------------*/
+/*-------------------------------------------SECOND PAGE BEGINS----------------------------------------------*/
+
+
+/*--------------------Feautured---------------------*/
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  font-family: Montserrat;
+  border: .5px solid;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.dropbtn i {
+  margin-left: 70px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Montserrat;
+  margin-left: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+/* ------------ Featured Ending -------------- */ 
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Montserrat;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.row p {
+  margin-top: 5px;
+}
+
+h6{
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.flicks{
+  position: absolute;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.shopping-content{
+  width: 100%;
+  padding: 20px 20px;
+  height: 100%;
+}
+
+.side-nav-container{
+  width: 25% !important; 
+  float: left;
+  overflow-x: hidden;
+  z-index: 999999;
+  background: white;
+  font-family: Montserrat !important;
+  font-size: 12px;
+  padding: 10px 20px;
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.side-nav-container a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+}
+
+.sneakers-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+  float: left;
+  width: 75% !important;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.form-button {
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  width: 70px;
+  border: none;
+}
+
+.form-email {
+  width: 250px;
+}
+
+#signupform p {
+  margin-top: 10px;
+}
+
+#signupform h4 {
+  font-weight: 600;
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+  
+}
+
+.dropdown-btn {
+  padding: 15px 10px;
+  background-color: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat !important;
+}
+
+.shop-all-btn {
+  padding: 15px 10px;
+  background-color: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-family: Montserrat !important;
+  margin: 0;
+}
+
+.side-nav-container a:hover{
+  background-color: rgba(226, 226, 226, 0.849);
+}
+
+.nav-divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.load-more-btn {
+  padding: 10px 15px;
+  background: #000;
+  color: #FFF;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  border: none;
+  margin-top: 40px;
+}
+
+.load-more-row{
+  margin: 0 auto;
+}
+
+
+
+
+
+
+.sidepanel  {
+  display: none;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 400px;
+  top: 0;
+  left: 10;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 40px 0px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: red;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #FFF;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  top: 0;
+  position: absolute;
+  margin-top: 10px;
+}
+
+
+
+
+
+/**************************               ******************
+*************************** MEDIA QUERIES ******************/
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  .sneakers-section {
+    max-width: 100%;
+  }
+
+ 
+
+  h1 {
+    font-size: 45px;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .slide-content h2 {
+    margin: 120px 0px 10px 0px;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .top-nav {
+    justify-content: flex-end;
+  }
+
+  nav, .shop-nav, .headicons, .side-nav-container {
+    display: none !important; 
+  }
+
+  header {
+    height: 65px;
+  }
+
+  .slide-content h2 {
+    margin: 100px 0px 10px 0px;
+  }
+
+  .sidepanel, .openbtn {
+    display: block;
+  }
+
+  .sneakers-section {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide-content h2 {
+    margin: 60px 0px 10px 0px;
+  }
+
+  #copyright, #signupform {
+    width: 100%;
+    text-align: left;
+    margin: 0px 0px 20px 0px !important;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .dropdown-btn {
+    padding: 15px 20px;
+  }
+
+  a.shop-all-btn {
+    padding: 8px 20px;
+  }
+
+.sidepanel .closebtn {
+  right: 12px;
+}
+
+#copyright h3 {
+  margin-top: 0px;
+}
+
+#copyright {
+  margin-bottom: 20px !important;
+}
+
+#signupform {
+  margin-top: 10px !important;
+}
+#copyright, #signupform {
+  text-align: center;
+}
+
+.box {
+  text-align: left !important;
+}
+
+h6 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+footer {
+  margin-top: 0px;
+}
+
+}
