@@ -522,6 +522,7 @@ form {
 }
 
 .dropdown-btn {
+  color: #000 !important;
   padding: 15px 10px;
   background-color: white;
   border: none;
@@ -542,6 +543,7 @@ form {
   font-size: 16px;
   font-family: Montserrat !important;
   margin: 0;
+  color: #000 !important;
 }
 
 .side-nav-container a:hover{
